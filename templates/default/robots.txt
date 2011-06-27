@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /files/download/
+Sitemap: http://azuer88.ath.cx/sitemap.xml

@@ -1,0 +1,18 @@
+<xrds:XRDS xmlns:xrds="xri://$xrds" xmlns="xri://$xrd*($v*2.0)"
+      xmlns:openid="http://openid.net/xmlns/1.0">
+  <XRD>
+
+    <Service priority="1">
+      <Type>http://openid.net/signon/1.0</Type>
+      <URI>http://intertwingly.net/id/</URI>
+      <openid:Delegate>http://intertwingly.net/blog/</openid:Delegate>
+    </Service>
+
+    <Service priority="2">
+      <Type>http://openid.net/signon/1.0</Type>
+      <URI>http://www.myopenid.com/server</URI>
+      <openid:Delegate>http://samruby.myopenid.com/</openid:Delegate>
+    </Service>
+
+  </XRD>
+</xrds:XRDS>

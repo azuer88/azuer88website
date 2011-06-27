@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Collection{% endblock %}
+
+{% block content_title %}Collection{% endblock %}
+
+
+{% block content %}
+  <div class="list">
+    {% for item in object_list %}
+    <div class="item">
+      <h3 class="title">{{ item.title }}</h3>
+      <p class="tease">{{ item.description|safe }}</p>
+      <p class="date">{{ item.pub_date|date:"Y F d" }}
+      | size: {{ item.pretty_filesize }}
+      | downloads: {{ item.downloads }}
+      </p>
+      <p class="download">
+        <a class="download" href="{% url download_item item.id item.filename %}">download</a>
+      </p>
+    </div>
+    {% endfor %}
+  </div>
+
+  {% if is_paginated %}
+  <p class="pagination">
+    Page {{ page }} of {{ pages }} &nbsp;
+    {% if has_next %}
+    <a class="older" href="{% url collection_list_paginated next %}" title="Next"> Next &gt;</a>
+    {% endif %}
+    {% if has_next and has_previous %} | {% endif %}
+    {% if has_previous %}
+    <a class="newer" href="{% url collection_list_paginated previous %}" title="Previous">&lt; Prev </a>
+    {% endif %}
+  </p>
+  {% endif %}
+{% endblock %}

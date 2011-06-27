@@ -1,0 +1,11 @@
+{% if object %}
+    {% if object.get_filetype_display == "Image" %}
+    <img src="/media/{{ object.filename }}" alt="{{ object.name }}:{{ object.get_filetype_display }}" class="{{ class }}"/>
+    {% else %}
+    Unknown object: {{ object }}
+    {% endif %}
+{% endif %}
+
+{% if object_list %}
+  OBJECT_LIST not implemented
+{% endif %}

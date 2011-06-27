@@ -1,0 +1,7 @@
+<div id="tabs10">
+  <ul>
+    {% for alink in menulinks %}
+    <li><a href="{{ alink.url}}" title="{{ alink.title }}"><span>{{ alink.caption }}</span></a></li>
+    {% endfor %}
+  </ul>
+</div>

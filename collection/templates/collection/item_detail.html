@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Collection{% endblock %}
+
+{% block content_title %}Collection{% endblock %}
+
+
+{% block content %}
+    <div class="item">
+      <h3 class="title">{{ object.title }}</h3>
+      <p class="tease">{{ object.description|safe }}</p>
+      <p class="date">{{ object.pub_date|date:"Y F d" }}
+      | size: {{ object.pretty_filesize }}
+      | downloads: {{ object.downloads }}
+      </p>
+      <p class="download">
+        <a class="download" href="{% url download_item object.id object.filename %}">download</a>
+      </p>
+    </div>
+{% endblock %}

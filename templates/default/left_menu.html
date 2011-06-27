@@ -1,0 +1,27 @@
+{% block before_menu_block %}
+{% endblock before_menu_block %}
+
+<div id="navcontainer">
+    {% block nav_menu_block %}
+  <ul>
+    <li><a href="/home/" title="About Me"><span>Home</span></a></li>
+    <li><a href="/blog/" title="My Ramblings, among other things"><span>Articles</span></a></li>
+    <li><a href="/files/" title="Amusing things I've collected"><span>Collection</span></a></li>
+    {% comment %}
+    <li><a href="/links/" title="My favorite links (Not done yet)"><span>Links</span></a></li>
+    {% endcomment %}
+    <li><a href="/home/disclaimer/" title="Disclaimer, Please read"><span>Disclaimer</span></a></li>
+{% comment %}
+    <li><a href="" title="Another Test Link"><span>Test</span></a></li>
+    <li><a href="" title="A Test LInk"><span>Help</span></a></li>
+{% endcomment %}
+  </ul>
+{% comment %}
+    {% load menu_links %}{% nav_menulinks %}
+{% endcomment %}
+
+    {% endblock nav_menu_block %}
+</div>
+
+{% block after_menu_block %}
+{% endblock after_menu_block %}

@@ -1,0 +1,77 @@
+{% load media %}
+{% load menu_links %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Deliciously Blue</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="{{ MEDIA_URL }}css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="container">
+
+<div id="header">
+<form name="form1" id="form1" method="post" action="">
+<input type="text" name="textfield" value="Search For..." />
+<input class=" button" type="submit" name="Submit" value="GO" />
+</form>
+<h1>Deliciously Blue</h1>
+<p>so tasty it hurts</p>
+</div>
+
+{% nav_menulinks %}
+
+{% comment %}
+<div id="tabs10">
+  <ul>
+    <li><a href="#" title="Link 1"><span>Link 1</span></a></li>
+    <li><a href="#" title="Link 2"><span>Link 2</span></a></li>
+    <li><a href="#" title="Link 3"><span>Link 3</span></a></li>
+    <li><a href="#" title="Link 4"><span>Link 4</span></a></li>
+    <li><a href="#" title="Link 5"><span>Link 5</span></a></li>
+    <li><a href="#" title="Link 6"><span>Link 6</span></a></li>
+	<li><a href="#" title="Link 7"><span>Link 7</span></a></li>
+  </ul>
+</div>
+{% endcomment %}
+
+<div id="container2">
+
+<div id="content">
+<h2>Here is the Main Content</h2>
+<p> Well, I don't have too much to say about this template. It was heavily inspired by <a href="http://www.oswd.org/design/information/id/2429" target="_blank">Leaves</a> by <a href="http://www.oswd.org/user/profile/id/6354" target="_blank">Anthonyy</a>. I also used a menu that I found in the Designologue. So really, I didn't do much here, but it was my first submitted template and I am quite happy with it. I believe this thing is standards compliant too.<br />
+  <br />
+  <img src="{{ MEDIA_URL }}img/left.gif" alt="Left Align" width="150" height="112" class="left" />Now I also added some image classes to position your nifty photos, so go ahead and have yourself a merry little time. There is a left one, a right one, and guess what? A center one!<br />
+  <br />
+  Quisque viverra, eros sed imperdiet iaculis, est risus facilisis quam, id malesuada arcu nulla luctus urna. Nullam et est.  <br />
+  </p>
+<h2>Quisque facilisis</h2>
+<p>
+<img src="{{ MEDIA_URL }}img/left.gif" alt="Right Align" width="150" height="112" class="right" />Aenean eros arcu, condimentum nec, dapibus ut, tincidunt sit amet, urna. Quisque viverra, eros sed <a href="#">imperdiet</a> iaculis, est risus facilisis quam, id malesuada arcu nulla luctus urna. Nullam et est. Vestibulum velit sem, faucibus cursus, dapibus vestibulum, pellentesque et, urna. Donec luctus. Donec lectus. Aliquam eget eros facilisis tortor feugiat sollicitudin. Integer lobortis vulputate sapien. Sed iaculis erat ac nunc.
+<br />
+<br />
+Aenean eros arcu, condimentum nec, dapibus ut, tincidunt sit amet, urna. Quisque viverra, eros sed imperdiet iaculis, est risus facilisis quam, id malesuada arcu nulla luctus urna. Nullam et est. <a href="#">Vestibulum velit</a> sem, faucibus cursus, dapibus vestibulum, pellentesque et, urna. Donec luctus. Donec lectus. Aliquam eget eros facilisis tortor feugiat sollicitudin. Integer lobortis vulputate sapien. Sed iaculis erat ac nunc.<img src="{{ MEDIA_URL }}img/left.gif" alt="Align Center" width="150" height="112" class="center" /></p>
+<h2>Fusce varius</h2>
+<p>
+Aenean eros arcu, <a href="#">condimentum</a> nec, dapibus ut, tincidunt sit amet, urna. Quisque viverra, eros sed imperdiet iaculis, est risus facilisis quam, id malesuada arcu nulla luctus urna. Nullam et est. Vestibulum velit sem, faucibus cursus, dapibus vestibulum, pellentesque et, urna. Donec luctus. Donec lectus. Aliquam eget eros facilisis tortor feugiat sollicitudin. Integer lobortis vulputate sapien. Sed iaculis erat ac nunc.</p>
+</div>
+
+<div id="sidebar">
+<h2>Sidebar</h2>
+<p>This is a little tidbit for sidebar content. This whole column could be used for whatever kind of purpose: news, pics, etc.</p>
+<p>Aenean eros arcu, condimentum nec, <a href="#">dapibus</a> ut, tincidunt sit amet, urna. Quisque viverra, eros sed imperdiet iaculis, est risus facilisis quam, id malesuada arcu nulla luctus urna. Nullam et est.</p>
+<p>Aenean eros arcu, condimentum nec, dapibus ut, tincidunt sit amet, urna. Quisque viverra, eros sed imperdiet iaculis, est risus facilisis quam, id malesuada arcu nulla luctus urna. Nullam et est.</p>
+</div>
+
+<div id="footer">
+<p>
+<a href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.0</a> | Copyright &copy; Your Name Here | Design by <a href="#">super j man</a>
+</p>
+</div>
+
+</div>
+
+</div>
+</body>
+</html>

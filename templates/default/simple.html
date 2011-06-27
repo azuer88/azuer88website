@@ -1,0 +1,13 @@
+{% extends "base-gray.html" %}
+
+
+{% block title %}{{ object.title }}{% endblock %}
+{% block content_title %}
+{{ object.title }}
+{% endblock %}
+
+
+{% block content %}
+  {% load blog comments tagging_tags inlines markup %}
+  {{ object.content|markdown|render_inlines|safe }}
+{% endblock %}

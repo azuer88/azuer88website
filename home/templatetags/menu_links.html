@@ -1,0 +1,8 @@
+
+<ul id="navlist">
+  {% for alink in menulinks %}
+    <li{% if alink.is_active%}id="active"{% endif %}>
+      <a href="{{ alink.url }}" title="{{ alink.title }}">{{ alink.Caption }}</a>
+    </li>
+  {% endof %}
+</ul>

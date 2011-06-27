@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" ><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+<head>
+{% block title_block %}
+<title>:: Azuer88 ::</title>
+{% endblock title_block %}
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+{% load media %}
+<link rel="stylesheet" href="{{ MEDIA_URL }}css/style01.css" type="text/css" />
+{% block header_extra_block %}
+{% endblock header_extra_block %}
+</head>
+
+<body>
+ <!-- Generated at www.csscreator.com -->
+<div id="container" >
+	<div id="outer" >
+ 		<div id="inner">
+ 			<div id="left" >
+			   {% left_content_block %}
+				<div id="logo">
+				</div>
+				{% block before_menu_block %}
+				{% endblock before_menu_block %}
+				<div id="navcontainer">
+				{% block nav_menu_block %}
+				<ul id="navlist">
+				<li id="active"><a href="#" id="current">Item one</a></li>
+				<li><a href="#">Item two</a></li>
+				<li><a href="#">Item three</a></li>
+				<li><a href="#">Item four</a></li>
+				<li><a href="#">Item five</a></li>
+				</ul>
+				{% endblock nav_menu_block %}
+				</div>
+				{% block after_menu_block %}
+				{% endblock after_menu_block %}
+				{% endblock left_content_block %}
+   		</div>
+   		<div id="content" >
+		 {% block content_main_block %}
+		 <h1>Welcome to Azuer88's Home</h1>
+		 {% comment %}
+<p>All templates are XHTML 1.0 and CSS2/ tableless.<br />
+This template has been tested on the following browsers: <br />
+<b>MAC</b> Safari, Opera6.3 Opera8.5, Mozilla, Firefox, IE
+<br /><b>PC:</b> IE 6, Firefox <br />
+<b>Linux:</b> Konqueror, Firefox</p>
+<p><a class="download" href="/files/en_templates/2/template-2.zip">Dowload Template </a></p>
+		<p><b>2 columns / centered / fixed width</b><br />
+		2 columns grid, both sides have a fixed width and are centered.<br />The concept of the border-trick is borrowed from an older layout by <a href="http://www.csscreator.com/version2/pagelayout.php">CssCreator - Generator</a> </p>
+{% endcomment %}
+<p>
+<img src="/media/img/left.gif" alt="Left Align" width="150" height="112" class="left">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed ipsum eget enim malesuada lacinia. Etiam vel libero metus, at auctor erat. Mauris ligula orci, blandit at rutrum ac, mollis id nunc. Sed massa ipsum, egestas quis porta vel, dapibus eu lacus. Nam ullamcorper pulvinar lacinia. Quisque gravida ligula tempor quam blandit fermentum ultricies mi adipiscing. Morbi eu metus ac ante placerat commodo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam porta sagittis viverra. Nulla risus urna, sodales in iaculis vel, tristique eu erat.
+</p>
+<p>
+Nulla et turpis lectus, a viverra odio. Integer vel tortor quis tortor ullamcorper aliquam quis ac sem. Quisque et tortor nunc. Morbi nisl ipsum, ultricies vel cursus vel, suscipit ac nunc. In quis posuere nulla. Quisque semper nunc vel nibh feugiat non commodo lorem condimentum. Donec malesuada, eros sit amet luctus accumsan, leo felis hendrerit tellus, sit amet egestas velit enim eu eros. Sed mattis gravida vehicula. Morbi id nulla diam. Donec sagittis nisi ac magna lobortis pharetra.
+</p>
+<h2>Quisque facilisis</h2>
+<p>
+<img src="/media/img/left.gif" alt="Right Align" width="150" height="112" class="right">
+<p>
+Aenean eros arcu, condimentum nec, dapibus ut, tincidunt sit amet, urna. Quisque viverra, eros sed imperdiet iaculis, est risus facilisis quam, id malesuada arcu nulla luctus urna. Nullam et est. Vestibulum velit sem, faucibus cursus, dapibus vestibulum, pellentesque et, urna. Donec luctus. Donec lectus. Aliquam eget eros facilisis tortor feugiat sollicitudin. Integer lobortis vulputate sapien. Sed iaculis erat ac nunc.
+</p>
+<br />&lt;-- <a href="javascript:history.back()">back</a></p>
+		{% endblock content_main_block %}
+		</div><!-- end content -->
+		</div><!-- end inner -->
+	</div><!-- end outer -->
+ 	<div id="footer">
+	<span id="created-by">Created by Azuer88</span>
+	  Copyright &copy; 2010.
+	</div>
+</div><!-- end container -->
+</body>
+</html>
